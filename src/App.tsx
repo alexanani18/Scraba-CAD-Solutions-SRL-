@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrabaCADPage from "./component/ScrabaCADpage";
-import PoliticaDeConfidentialitate from "./PoliticaDeConfidentialitate";
+import PoliticaDeConfidentialitate from "./component/PoliticaDeConfidentialitate";
 
 export default function App() {
   return (

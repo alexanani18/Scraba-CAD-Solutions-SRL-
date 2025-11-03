@@ -53,7 +53,7 @@ export default function PoliticaDeConfidentialitate() {
           <br />
           Sediu: Str. Principală nr. 83, Mărgina, jud. Timiș, România
           <br />
-          Email: <a href="mailto:contact@geoexpert.ro" className="underline">contact@geoexpert.ro</a>
+          Email: <a href="mailto:scrabacadsolutions@gmail.com" className="underline">scrabacadsolutions@gmail.com</a>
           <br />
           Telefon: <a href="tel:+40721154391" className="underline">+40 721 154 391</a>
         </p>
@@ -107,8 +107,8 @@ export default function PoliticaDeConfidentialitate() {
         <p className="text-slate-700 mt-3">
           Pentru exercitarea acestor drepturi, ne poți contacta la adresa:
           <br />
-          <a href="mailto:contact@geoexpert.ro" className="underline">
-            contact@geoexpert.ro
+          <a href="mailto:scrabacadsolutions@gmail.com" className="underline">
+            scrabacadsolutions@gmail.com
           </a>
         </p>
 

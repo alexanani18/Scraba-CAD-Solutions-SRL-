@@ -10,7 +10,7 @@ function SEOHead() {
     const siteUrl = "https://www.geoexpert.ro/"; // actualizează dacă e diferit
     const title = "Scraba CAD Solutions SRL – Topografie, Cadastru și Trasare în România";
     const description = "Servicii profesionale de ridicări topografice, cadastru, trasare construcții și planuri pentru autorizații. Ofertă în aceeași zi. Autorizat ANCPI.";
-    const hero = "https://images.unsplash.com/photo-1610808072077-9e1b3c040f1d?q=80&w=1600&auto=format&fit=crop";
+    const hero = "https://zuekc.com.ua/images/icons/val-land_vactorized.png";
 
     // Titlu și limbă
     document.title = title;
@@ -150,17 +150,20 @@ export default function ScrabaCADPage() {
     return Object.keys(e).length === 0;
   }
 
-  function handleSubmit(ev: React.FormEvent) {
-    ev.preventDefault();
-    if (!validate()) return;
+    async function handleSubmit(ev: React.FormEvent) {
+      ev.preventDefault();
+      if(!validate()) return;
 
-    // Lead-gen friendly: open a prefilled email (works without backend)
-    const subject = encodeURIComponent("Cerere ofertă – Scraba CAD Solutions SRL");
-    const body = encodeURIComponent(
-      `Nume: ${form.name}\nEmail: ${form.email}\nTelefon: ${form.phone}\n\nMesaj:\n${form.message}`
-    );
-    window.location.href = `mailto:scrabacadsolutions@gmail.com?subject=${subject}&body=${body}`;
-  }
+      const res = await fetch("https://alexanani.ro/send-email.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      const data = await res.json();
+      alert(data.success ? "Mesaj trimis cu succes!" : "Eroare la trimiterea mesajului!");
+    }
+
 
   const nav = (
     <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">

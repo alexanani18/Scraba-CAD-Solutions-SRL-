@@ -115,7 +115,21 @@ Scraba-CAD-Solutions-SRL/
 
 ---
 
+## MAIL
+
+- Ca sa configurezi mail-ul ai nevoie de phpMailer instalat: 
+```apache
+In public_html, creează un folder numit phpmailer/
+Descarcă PHPMailer de aici:
+👉 https://github.com/PHPMailer/PHPMailer
+Extrage fișierele și urcă în acel folder tot conținutul din src/)
+```
+- configurarea send-email.php in public_html
+-> Actualizare link in react
+
+---
+
 ## 🔗 Linkuri utile
 
-- 🌍 [GeoExpert / Scraba CAD Solutions SRL](https://geoexpert.ro)
+- 🌍 [Scraba CAD Solutions SRL](https://geoexpert.ro)
 - 🐙 [GitHub Repo](https://github.com/alexanani18/Scraba-CAD-Solutions-SRL-)
