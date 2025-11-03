@@ -1,73 +1,121 @@
-# React + TypeScript + Vite
+# Scraba CAD Solutions SRL
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> React + TypeScript + Vite + TailwindCSS landing page pentru servicii de topografie, cadastru și trasare.
 
-Currently, two official plugins are available:
+## 🧩 Tehnologii utilizate
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ **React 18** – UI component-based SPA
+- 🧠 **TypeScript** – tipare statice și siguranță la compilare
+- ⚡ **Vite** – bundler ultra-rapid pentru build și HMR
+- 🎨 **TailwindCSS** – sistem de design utility-first
+- 🔍 **ESLint + Prettier** – linting și formatare automată
+- 🌍 **React Router DOM** – rutare client-side (`/`, `/politica-de-confidentialitate`)
+- 📄 **HTML5 + Open Graph + JSON-LD** – SEO avansat
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Setup local
 
-## Expanding the ESLint configuration
+### 1️⃣ Clonează repository-ul
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 2️⃣ Instalează dependențele
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 3️⃣ Rulează serverul de dezvoltare
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Aplicația va porni la:  
+👉 [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🏗️ Build pentru producție
+
+```bash
+npm run build
+```
+
+Rezultatul va fi generat în folderul:
+```
+dist/
+```
+
+### Pentru testarea build-ului local:
+```bash
+npm run preview
+```
+
+---
+
+## 🌐 Deploy pe cPanel / Apache
+
+1. Rulează `npm run build`  
+2. Încarcă conținutul din `dist/` în `public_html`  
+3. Creează fișierul `.htaccess` cu următorul conținut:
+
+```apache
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+```
+
+---
+
+## 📂 Structura proiectului
+
+```
+Scraba-CAD-Solutions-SRL/
+│
+├── src/
+│   ├── component/
+│   │   └── ScrabaCADPage.tsx          # Landing page principală
+│   ├── PoliticaDeConfidentialitate.tsx # Pagina legală GDPR
+│   ├── main.tsx                       # Punct de intrare React
+│   └── App.tsx                        # Router + layout principal
+│
+├── public/                            # Active statice
+├── index.html                         # Document principal HTML
+├── tailwind.config.js                 # Configurația TailwindCSS
+├── vite.config.ts                     # Configurația Vite
+├── tsconfig*.json                     # Setări TypeScript
+└── package.json                       # Scripturi & dependențe
+```
+
+---
+
+## ⚙️ Scripturi utile
+
+| Comandă               | Descriere                               |
+|------------------------|------------------------------------------|
+| `npm run dev`          | Pornește serverul local (HMR)           |
+| `npm run build`        | Compilează aplicația pentru producție   |
+| `npm run preview`      | Testează build-ul local                 |
+| `npm run lint`         | Rulează ESLint                          |
+
+---
+
+## 🧠 Funcționalități cheie
+
+- Formulare cu validare (`useState` + regex)
+- Trimitere automată e-mail prin `mailto:`
+- SEO complet (meta tags, Open Graph, JSON-LD)
+- Responsivitate completă (TailwindCSS)
+- Secțiuni: Hero, Servicii, Despre, Contact, Footer
+- Pagină legală: Politica de Confidențialitate (`/politica-de-confidentialitate`)
+
+---
+
+## 🔗 Linkuri utile
+
+- 🌍 [GeoExpert / Scraba CAD Solutions SRL](https://geoexpert.ro)
+- 🐙 [GitHub Repo](https://github.com/alexanani18/Scraba-CAD-Solutions-SRL-)
