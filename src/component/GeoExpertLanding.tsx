@@ -165,7 +165,7 @@ export default function GeoExpertLanding() {
   const nav = (
     <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-3 group" aria-label="Scraba CAD Solutions SRL acasă">
+        <a href="#acasa" className="flex items-center gap-3 group" aria-label="Scraba CAD Solutions SRL acasă">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" className="shrink-0">
             <path d="M3 18l9-14 9 14H3z" className="fill-slate-900"/>
             <path d="M7 18l5-8 5 8H7z" className="fill-[#0a2540]"/>
@@ -173,9 +173,9 @@ export default function GeoExpertLanding() {
           <span className="text-[#0a2540] font-semibold text-lg tracking-tight">Scraba CAD Solutions SRL</span>
         </a>
         <div className="hidden md:flex items-center gap-6">
-          <a href="#services" className="text-slate-700 hover:text-[#0a2540]">Servicii</a>
-          <a href="#about" className="text-slate-700 hover:text-[#0a2540]">Despre noi</a>
-          <a href="#why" className="text-slate-700 hover:text-[#0a2540]">De ce noi</a>
+          <a href="#servicii" className="text-slate-700 hover:text-[#0a2540]">Servicii</a>
+          <a href="#despre_noi" className="text-slate-700 hover:text-[#0a2540]">Despre noi</a>
+          <a href="#de_ce_noi" className="text-slate-700 hover:text-[#0a2540]">De ce noi</a>
           <a href="#contact" className="inline-flex items-center rounded-xl border border-[#0a2540] px-4 py-2 text-[#0a2540] hover:bg-[#0a2540] hover:text-white transition">Cere ofertă</a>
         </div>
       </div>
@@ -183,7 +183,7 @@ export default function GeoExpertLanding() {
   );
 
   return (
-    <div id="top" className="font-sans text-slate-800 scroll-smooth">
+    <div id="acasa" className="font-sans text-slate-800 scroll-smooth">
       <SEOHead />
       {nav}
 
@@ -206,22 +206,20 @@ export default function GeoExpertLanding() {
               </a>
             </div>
             <div className="mt-6 text-sm text-slate-500">
-              <span className="font-medium text-slate-700">Timp de răspuns:</span> în aceeași zi lucrătoare
             </div>
           </div>
           <div className="relative">
             <div className="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-lg ring-1 ring-slate-200">
-              {/* Hero image placeholder – replace with o fotografie a echipei pe teren cu stație totală */}
               <img
-                src="https://images.unsplash.com/photo-1610808072077-9e1b3c040f1d?q=80&w=1600&auto=format&fit=crop"
-                alt="Echipă de topografie pe teren cu stație totală"
+                src="https://scontent.ftsr1-2.fna.fbcdn.net/v/t39.30808-6/566198775_1227488979398741_4724031541227192134_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=jixZ1RDINPgQ7kNvwETfS6R&_nc_oc=AdmyKIf8HXwXyHnvnAcgPxGgkWOu11oUlCF07HMKjQsHK2K_yAnF9i3DlJFe7lv2sgA&_nc_zt=23&_nc_ht=scontent.ftsr1-2.fna&_nc_gid=TvmXyPYQdvpUKWIAu9TTwA&oh=00_AfiXaMTzH-x621C1fxc8GcrkQdfegrlVYUV2My8CXBsYAw&oe=690E9505"
+                alt="Echipament de măsurare topografică – stație totală montată pe trepied, pregătită pentru lucrări de cadastru și drumuri."
                 className="h-full w-full object-cover"
                 loading="eager"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 hidden sm:block bg-white/90 backdrop-blur rounded-2xl shadow p-4 border border-slate-200">
               <p className="text-sm">
-                <span className="font-semibold text-[#0a2540]">Autorizat ANCPI</span> • ETRS89/Stereo70 • Precizie instrumente 1''
+                <span className="font-semibold text-[#0a2540]">Autorizat ANCPI</span> • ETRS89/Stereo70
               </p>
             </div>
           </div>
@@ -229,7 +227,7 @@ export default function GeoExpertLanding() {
       </header>
 
       {/* SERVICES */}
-      <section id="services" className="py-20 bg-white">
+      <section id="servicii" className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#0a2540]">Serviciile noastre</h2>
           <p className="mt-2 text-slate-600">Soluții complete și conforme pentru proiecte civile și industriale.</p>
@@ -276,7 +274,7 @@ export default function GeoExpertLanding() {
       </section>
 
       {/* ABOUT */}
-      <section id="about" className="py-20 bg-slate-50">
+      <section id="despre_noi" className="py-20 bg-slate-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <h2 className="text-3xl font-bold text-[#0a2540]">Despre Scraba CAD Solutions SRL</h2>
@@ -305,7 +303,7 @@ export default function GeoExpertLanding() {
       </section>
 
       {/* WHY US */}
-      <section id="why" className="py-20 bg-white">
+      <section id="de_ce_noi" className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#0a2540]">De ce să ne alegi</h2>
           <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -335,7 +333,7 @@ export default function GeoExpertLanding() {
                 <label htmlFor="name" className="block text-sm font-medium text-slate-700">Nume*</label>
                 <input id="name" name="name" autoComplete="name" required
                   value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  className="mt-1 w-full rounded-xl border-slate-300 focus:border-[#0a2540] focus:ring-[#0a2540]" />
+                  className="mt-1 w-full rounded-xl border border-slate-400 bg-slate-50 focus:border-[#0a2540] focus:ring-[#0a2540] px-3 py-2 shadow-sm" />
                 {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name}</p>}
               </div>
               <div className="grid sm:grid-cols-2 gap-4">
@@ -343,14 +341,14 @@ export default function GeoExpertLanding() {
                   <label htmlFor="email" className="block text-sm font-medium text-slate-700">Email*</label>
                   <input id="email" name="email" type="email" autoComplete="email" required
                     value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    className="mt-1 w-full rounded-xl border-slate-300 focus:border-[#0a2540] focus:ring-[#0a2540]" />
+                    className="mt-1 w-full rounded-xl border border-slate-400 bg-slate-50 focus:border-[#0a2540] focus:ring-[#0a2540] px-3 py-2 shadow-sm" />
                   {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
                 </div>
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-slate-700">Telefon*</label>
                   <input id="phone" name="phone" inputMode="tel" placeholder="07xx xxx xxx" required
                     value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                    className="mt-1 w-full rounded-xl border-slate-300 focus:border-[#0a2540] focus:ring-[#0a2540]" />
+                    className="mt-1 w-full rounded-xl border border-slate-400 bg-slate-50 focus:border-[#0a2540] focus:ring-[#0a2540] px-3 py-2 shadow-sm" />
                   {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone}</p>}
                 </div>
               </div>
@@ -358,7 +356,7 @@ export default function GeoExpertLanding() {
                 <label htmlFor="message" className="block text-sm font-medium text-slate-700">Mesaj*</label>
                 <textarea id="message" name="message" rows={5} required
                   value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })}
-                  className="mt-1 w-full rounded-xl border-slate-300 focus:border-[#0a2540] focus:ring-[#0a2540]" />
+                  className="mt-1 w-full rounded-xl border border-slate-400 bg-slate-50 focus:border-[#0a2540] focus:ring-[#0a2540] px-3 py-2 shadow-sm" />
                 {errors.message && <p className="mt-1 text-sm text-red-600">{errors.message}</p>}
               </div>
               <div className="flex items-center gap-3">
@@ -375,18 +373,16 @@ export default function GeoExpertLanding() {
             <h3 className="text-xl font-semibold text-[#0a2540]">Date de contact</h3>
             <ul className="mt-4 space-y-2 text-slate-700">
               <li>Scraba CAD Solutions SRL</li>
-              <li>CUI: 12345678</li>
-              <li>Sediu: Str. Exemplu 10, București</li>
-              <li>Punct de lucru: Str. Terenului 5, Brașov</li>
+              <li>CUI: 50476915</li>
+              <li>Sediu: Strada Principală nr. 83, sat Mărgina, comuna Mărgina, judeţul Timiş, România</li>
               <li>Email: <a href="mailto:contact@geoexpert.ro" className="underline">contact@geoexpert.ro</a></li>
-              <li>Telefon: <a href="tel:+40700000000" className="underline">+40 700 000 000</a></li>
+              <li>Telefon: <a href="tel:+40721154391" className="underline">+40 721 154 391</a></li>
             </ul>
             <div className="mt-6 h-56 w-full rounded-xl overflow-hidden border border-slate-200">
-              {/* Placeholder hartă – integrați ulterior un iframe Google Maps */}
               <iframe
                 title="Harta sediu Scraba CAD Solutions SRL"
                 className="h-full w-full"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=26.05%2C44.42%2C26.12%2C44.46&layer=mapnik"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=22.282333%2C45.869941%2C22.292333%2C45.873941&layer=mapnik&marker=45.871941%2C22.287333"
               />
             </div>
           </div>
@@ -408,17 +404,17 @@ export default function GeoExpertLanding() {
           <div>
             <h4 className="font-semibold">Date firmă</h4>
             <ul className="mt-3 text-white/80 text-sm space-y-1">
-              <li>CUI: 12345678</li>
-              <li>Nr. Reg. Com.: J00/0000/2020</li>
-              <li>Sediu: Str. Exemplu 10, București</li>
+              <li>CUI: 50476915</li>
+              <li>Nr. Reg. Com.: J/35/1318307/2024</li>
+              <li>Sediu: Strada Principală nr. 83, sat Mărgina, comuna Mărgina, judeţul Timiş, România</li>
               <li>Email: contact@geoexpert.ro</li>
-              <li>Telefon: +40 700 000 000</li>
+              <li>Telefon: +40 721 154 391</li>
             </ul>
           </div>
           <div>
             <h4 className="font-semibold">Linkuri utile</h4>
             <ul className="mt-3 text-white/80 text-sm space-y-1">
-              <li><a href="#services" className="hover:underline">Servicii</a></li>
+              <li><a href="#servicii" className="hover:underline">Servicii</a></li>
               <li><a href="#contact" className="hover:underline">Contact</a></li>
               <li><a href="#privacy" className="hover:underline">Politică de confidențialitate</a></li>
             </ul>
@@ -426,25 +422,10 @@ export default function GeoExpertLanding() {
         </div>
         <div className="border-t border-white/10">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 text-center text-white/70 text-sm">
-            © {year} Scraba CAD Solutions SRL. Toate drepturile rezervate.
+            © 2024 - {year} Scraba CAD Solutions SRL. Toate drepturile rezervate.
           </div>
         </div>
       </footer>
-
-      {/* PRIVACY (minimal placeholder) */}
-      <section id="privacy" className="py-16 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#0a2540]">Politică de confidențialitate</h2>
-          <p className="mt-4 text-slate-700 text-sm leading-relaxed">
-            Scraba CAD Solutions SRL prelucrează datele cu caracter personal în scopul furnizării serviciilor de topografie și
-            cadastru, în baza temeiului legal al executării contractului și al interesului legitim. Datele sunt păstrate
-            pe perioada necesară îndeplinirii scopului și nu sunt transferate către terți decât atunci când este necesar
-            pentru îndeplinirea obligațiilor legale. Pentru exercitarea drepturilor dumneavoastră (acces, rectificare,
-            ștergere, restricționare), ne puteți contacta la adresa contact@geoexpert.ro.
-          </p>
-        </div>
-      </section>
-      
     </div>
   );
 }
