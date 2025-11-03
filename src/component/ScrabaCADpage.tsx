@@ -36,7 +36,7 @@ function SEOHead() {
     upsert('meta[name="googlebot"]', { name: 'googlebot', content: 'index,follow' });
     upsert('meta[name="viewport"]', { name: 'viewport', content: 'width=device-width, initial-scale=1' });
     upsert('meta[name="theme-color"]', { name: 'theme-color', content: '#0a2540' });
-    upsert('meta[name="keywords"]', { name: 'keywords', content: 'topografie, cadastru, trasare, ridicari topografice, planuri autorizatie, GeoExpert, Bucuresti, Brasov' });
+    upsert('meta[name="keywords"]', { name: 'keywords', content: 'topografie, cadastru, trasare, ridicari topografice, planuri autorizatie, Scraba CAD Solution, Bucuresti, Brasov' });
 
     // Open Graph
     upsert('meta[property="og:type"]', { property: 'og:type', content: 'website' });
@@ -46,7 +46,7 @@ function SEOHead() {
     upsert('meta[property="og:url"]', { property: 'og:url', content: siteUrl });
     upsert('meta[property="og:site_name"]', { property: 'og:site_name', content: 'Scraba CAD Solutions SRL' });
     upsert('meta[property="og:image"]', { property: 'og:image', content: hero });
-    upsert('meta[property="og:image:alt"]', { property: 'og:image:alt', content: 'Echipă GeoExpert pe teren cu stație totală' });
+    upsert('meta[property="og:image:alt"]', { property: 'og:image:alt', content: 'Echipă Scraba CAD Solution SRL pe teren cu stație totală' });
 
     // Twitter
     upsert('meta[name="twitter:card"]', { name: 'twitter:card', content: 'summary_large_image' });
@@ -75,7 +75,7 @@ function SEOHead() {
         name: 'Scraba CAD Solutions SRL',
         url: siteUrl,
         logo: hero,
-        email: 'contact@contact.ro',
+        email: 'scrabacadsolutions@gmail.com',
         telephone: '+40700000000'
       },
       {
@@ -159,7 +159,7 @@ export default function ScrabaCADPage() {
     const body = encodeURIComponent(
       `Nume: ${form.name}\nEmail: ${form.email}\nTelefon: ${form.phone}\n\nMesaj:\n${form.message}`
     );
-    window.location.href = `mailto:oferta@geoexpert.ro?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:scrabacadsolutions@gmail.com?subject=${subject}&body=${body}`;
   }
 
   const nav = (
@@ -192,7 +192,7 @@ export default function ScrabaCADPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-[#0a2540]">
-              Topografie, Cadastru și Trasare la standarde profesionale
+              Topografie, Cadastru și Geodezie la standarde profesionale
             </h1>
             <p className="mt-4 text-lg text-slate-600">
               Scraba CAD Solutions SRL oferă servicii complete pentru persoane fizice și juridice: ridicări topografice, documentații de cadastru, trasare construcții și planuri pentru autorizații. Rapid, corect și conform normelor ANCPI.
@@ -280,14 +280,14 @@ export default function ScrabaCADPage() {
             <h2 className="text-3xl font-bold text-[#0a2540]">Despre Scraba CAD Solutions SRL</h2>
             <p className="mt-4 text-slate-700">
               Suntem o echipă de ingineri geodezi cu experiență în proiecte rezidențiale, comerciale și infrastructură. 
-              Utilizăm echipamente moderne (stații totale, nivelmente digitale, GNSS RTK) și fluxuri digitale pentru 
+              Utilizăm echipamente moderne (stații totale, nivele digitale, GNSS RTK) și fluxuri digitale pentru 
               livrări precise și rapide. Firma este <span className="font-semibold">autorizată ANCPI</span> pentru lucrări de 
               specialitate și operează conform normelor în vigoare.
             </p>
             <div className="mt-6 flex flex-wrap gap-3 text-sm">
               <span className="rounded-full bg-white border border-slate-200 px-3 py-1">Certificare ANCPI</span>
               <span className="rounded-full bg-white border border-slate-200 px-3 py-1">Instrumente calibrate</span>
-              <span className="rounded-full bg-white border border-slate-200 px-3 py-1">Arhivă digitală livrări</span>
+              <span className="rounded-full bg-white border border-slate-200 px-3 py-1">Arhivă digitală lucrări</span>
             </div>
           </div>
           <div className="rounded-2xl border border-slate-200 p-6 bg-white shadow-sm">
@@ -375,7 +375,7 @@ export default function ScrabaCADPage() {
               <li>Scraba CAD Solutions SRL</li>
               <li>CUI: 50476915</li>
               <li>Sediu: Strada Principală nr. 83, sat Mărgina, comuna Mărgina, judeţul Timiş, România</li>
-              <li>Email: <a href="mailto:contact@geoexpert.ro" className="underline">contact@geoexpert.ro</a></li>
+              <li>Email: <a href="mailto:scrabacadsolutions@gmail.com" className="underline">scrabacadsolutions@gmail.com</a></li>
               <li>Telefon: <a href="tel:+40721154391" className="underline">+40 721 154 391</a></li>
             </ul>
             <div className="mt-6 h-56 w-full rounded-xl overflow-hidden border border-slate-200">
@@ -407,7 +407,7 @@ export default function ScrabaCADPage() {
               <li>CUI: 50476915</li>
               <li>Nr. Reg. Com.: J/35/1318307/2024</li>
               <li>Sediu: Strada Principală nr. 83, sat Mărgina, comuna Mărgina, judeţul Timiş, România</li>
-              <li>Email: contact@geoexpert.ro</li>
+              <li>Email: scrabacadsolutions@gmail.com</li>
               <li>Telefon: +40 721 154 391</li>
             </ul>
           </div>
