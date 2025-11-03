@@ -1,5 +1,3 @@
-import React from "react";
-
 /** Pagina Politică de Confidențialitate – stil și structură compatibile cu ScrabaCADPage */
 export default function PoliticaDeConfidentialitate() {
   const year = new Date().getFullYear();
