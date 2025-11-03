@@ -133,7 +133,7 @@ function SEOHead() {
   return null;
 }
 
-export default function GeoExpertLanding() {
+export default function ScrabaCADPage() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
   const [errors, setErrors] = useState({} as Record<string, string>);
   const year = useMemo(() => new Date().getFullYear(), []);
@@ -201,7 +201,7 @@ export default function GeoExpertLanding() {
               <a href="#contact" className="inline-flex items-center justify-center rounded-xl bg-[#0a2540] px-6 py-3 text-white font-semibold shadow hover:shadow-lg transition">
                 Cere ofertă
               </a>
-              <a href="#services" className="inline-flex items-center justify-center rounded-xl border border-slate-300 px-6 py-3 text-slate-700 hover:border-[#0a2540] hover:text-[#0a2540] transition">
+              <a href="#servicii" className="inline-flex items-center justify-center rounded-xl border border-slate-300 px-6 py-3 text-slate-700 hover:border-[#0a2540] hover:text-[#0a2540] transition">
                 Vezi serviciile
               </a>
             </div>
@@ -363,9 +363,9 @@ export default function GeoExpertLanding() {
                 <button type="submit" className="inline-flex items-center rounded-xl bg-[#0a2540] px-6 py-3 text-white font-semibold shadow hover:shadow-lg transition">
                   Trimite cererea
                 </button>
-                <a href="tel:+40700000000" className="text-slate-600 hover:text-[#0a2540]">sau sună: <span className="font-semibold">+40 700 000 000</span></a>
+                <a href="tel:+40721154391" className="text-slate-600 hover:text-[#0a2540]">sau sună: <span className="font-semibold">+40 721 154 391</span></a>
               </div>
-              <p className="text-xs text-slate-500">Prin trimiterea formularului sunteți de acord cu prelucrarea datelor conform <a href="#privacy" className="underline">politicii de confidențialitate</a>.</p>
+              <p className="text-xs text-slate-500">Prin trimiterea formularului sunteți de acord cu prelucrarea datelor conform <a href="/politica-de-confidentialitate" className="underline">politicii de confidențialitate</a>.</p>
             </form>
           </div>
 
@@ -416,7 +416,7 @@ export default function GeoExpertLanding() {
             <ul className="mt-3 text-white/80 text-sm space-y-1">
               <li><a href="#servicii" className="hover:underline">Servicii</a></li>
               <li><a href="#contact" className="hover:underline">Contact</a></li>
-              <li><a href="#privacy" className="hover:underline">Politică de confidențialitate</a></li>
+              <li><a href="/politica-de-confidentialitate" className="hover:underline">Politică de confidențialitate</a></li>
             </ul>
           </div>
         </div>
