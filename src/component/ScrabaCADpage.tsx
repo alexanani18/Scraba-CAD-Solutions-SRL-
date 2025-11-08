@@ -7,7 +7,7 @@ import React, { useMemo, useState } from "react";
 /** SEO Head injector: adds meta tags, Open Graph, Twitter and JSON-LD schema. */
 function SEOHead() {
   React.useEffect(() => {
-    const siteUrl = "https://www.geoexpert.ro/"; // actualizează dacă e diferit
+    const siteUrl = "https://www.geoexpert.ro/"; // TODO actualizează dacă e diferit
     const title = "Scraba CAD Solutions SRL – Topografie, Cadastru și Trasare în România";
     const description = "Servicii profesionale de ridicări topografice, cadastru, trasare construcții și planuri pentru autorizații. Ofertă în aceeași zi. Autorizat ANCPI.";
     const hero = "https://zuekc.com.ua/images/icons/val-land_vactorized.png";
@@ -214,7 +214,7 @@ export default function ScrabaCADPage() {
           <div className="relative">
             <div className="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-lg ring-1 ring-slate-200">
               <img
-                src="https://scontent.ftsr1-2.fna.fbcdn.net/v/t39.30808-6/566198775_1227488979398741_4724031541227192134_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=jixZ1RDINPgQ7kNvwETfS6R&_nc_oc=AdmyKIf8HXwXyHnvnAcgPxGgkWOu11oUlCF07HMKjQsHK2K_yAnF9i3DlJFe7lv2sgA&_nc_zt=23&_nc_ht=scontent.ftsr1-2.fna&_nc_gid=TvmXyPYQdvpUKWIAu9TTwA&oh=00_AfiXaMTzH-x621C1fxc8GcrkQdfegrlVYUV2My8CXBsYAw&oe=690E9505"
+                src="./src/image/566198775_1227488979398741_4724031541227192134_n.jpg"
                 alt="Echipament de măsurare topografică – stație totală montată pe trepied, pregătită pentru lucrări de cadastru și drumuri."
                 className="h-full w-full object-cover"
                 loading="eager"
