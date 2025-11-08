@@ -51,7 +51,7 @@ export default function PoliticaDeConfidentialitate() {
           <br />
           CUI: 50476915
           <br />
-          Sediu: Str. Principală nr. 83, Mărgina, jud. Timiș, România
+          Sediu: Str. Principală nr. 83, ap. 2, Margina, jud. Timiș, România
           <br />
           Email: <a href="mailto:scrabacadsolutions@gmail.com" className="underline">scrabacadsolutions@gmail.com</a>
           <br />

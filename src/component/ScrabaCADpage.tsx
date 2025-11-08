@@ -377,7 +377,7 @@ export default function ScrabaCADPage() {
             <ul className="mt-4 space-y-2 text-slate-700">
               <li>Scraba CAD Solutions SRL</li>
               <li>CUI: 50476915</li>
-              <li>Sediu: Strada Principală nr. 83, sat Mărgina, comuna Mărgina, judeţul Timiş, România</li>
+              <li>Sediu: Strada Principală nr. 83, ap. 2, sat Margina, comuna Margina, judeţul Timiş, România</li>
               <li>Email: <a href="mailto:scrabacadsolutions@gmail.com" className="underline">scrabacadsolutions@gmail.com</a></li>
               <li>Telefon: <a href="tel:+40721154391" className="underline">+40 721 154 391</a></li>
             </ul>
@@ -409,7 +409,7 @@ export default function ScrabaCADPage() {
             <ul className="mt-3 text-white/80 text-sm space-y-1">
               <li>CUI: 50476915</li>
               <li>Nr. Reg. Com.: J/35/1318307/2024</li>
-              <li>Sediu: Strada Principală nr. 83, sat Mărgina, comuna Mărgina, judeţul Timiş, România</li>
+              <li>Sediu: Strada Principală nr. 83, ap. 2, sat Margina, comuna Margina, judeţul Timiş, România</li>
               <li>Email: scrabacadsolutions@gmail.com</li>
               <li>Telefon: +40 721 154 391</li>
             </ul>
