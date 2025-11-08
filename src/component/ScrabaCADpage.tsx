@@ -214,7 +214,7 @@ export default function ScrabaCADPage() {
           <div className="relative">
             <div className="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-lg ring-1 ring-slate-200">
               <img
-                src="./src/image/566198775_1227488979398741_4724031541227192134_n.jpg"
+                src="image/566198775_1227488979398741_4724031541227192134_n.jpg"
                 alt="Echipament de măsurare topografică – stație totală montată pe trepied, pregătită pentru lucrări de cadastru și drumuri."
                 className="h-full w-full object-cover"
                 loading="eager"
@@ -334,7 +334,7 @@ export default function ScrabaCADPage() {
             <form onSubmit={handleSubmit} className="mt-8 space-y-4" noValidate>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-slate-700">Nume*</label>
-                <input id="name" name="name" autoComplete="name" required
+                <input id="name" name="name" autoComplete="name" required placeholder="Nume Prenume"
                   value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })}
                   className="mt-1 w-full rounded-xl border border-slate-400 bg-slate-50 focus:border-[#0a2540] focus:ring-[#0a2540] px-3 py-2 shadow-sm" />
                 {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name}</p>}
@@ -342,7 +342,7 @@ export default function ScrabaCADPage() {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-slate-700">Email*</label>
-                  <input id="email" name="email" type="email" autoComplete="email" required
+                  <input id="email" name="email" type="email" autoComplete="email" required placeholder="Adresa de email valida"
                     value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })}
                     className="mt-1 w-full rounded-xl border border-slate-400 bg-slate-50 focus:border-[#0a2540] focus:ring-[#0a2540] px-3 py-2 shadow-sm" />
                   {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
@@ -357,7 +357,7 @@ export default function ScrabaCADPage() {
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-slate-700">Mesaj*</label>
-                <textarea id="message" name="message" rows={5} required
+                <textarea id="message" name="message" rows={5} required placeholder="Mesaj"
                   value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })}
                   className="mt-1 w-full rounded-xl border border-slate-400 bg-slate-50 focus:border-[#0a2540] focus:ring-[#0a2540] px-3 py-2 shadow-sm" />
                 {errors.message && <p className="mt-1 text-sm text-red-600">{errors.message}</p>}
